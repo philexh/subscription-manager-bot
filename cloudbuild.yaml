@@ -13,7 +13,7 @@ steps:
           [
               'functions',
               'deploy',
-              'bot${_FUNCTION_NAME}',
+              'bot-${_FUNCTION_NAME}',
               '--trigger-http',
               '--allow-unauthenticated',
               '--runtime',
