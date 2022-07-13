@@ -33,7 +33,7 @@ steps:
           [
               'functions',
               'deploy',
-              'end-subscription-${_FUNCTION_NAME}',
+              'end-subscription${_FUNCTION_NAME}',
               '--trigger-http',
               '--allow-unauthenticated',
               '--runtime',
