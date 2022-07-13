@@ -1,3 +1,5 @@
+options:
+logging: CLOUD_LOGGING_ONLY
 steps:
     - name: 'gcr.io/cloud-builders/npm'
       args: ['install']
@@ -69,6 +71,3 @@ steps:
               'BOT_TOKEN=${_BOT_TOKEN},SHEET_ID=${_SHEET_ID},SHEET_CLIENT_EMAIL=${_SHEET_CLIENT_EMAIL},SHEET_PRIVATE_KEY=${_SHEET_PRIVATE_KEY},INSIDER_CHAT_ID=${_INSIDER_CHAT_ID}',
           ]
       dir: '.'
-      
-  options:
-  logging: CLOUD_LOGGING_ONLY
